@@ -1,0 +1,36 @@
+{
+  "appenders": 
+    {
+      "out": {"type": "console"},
+      "access": 
+        {
+          "type": "file",
+          "filename": "logs/access.log",
+          "category": "http",
+          "maxLogSize": 2097152,
+          "numBackups": 20
+        },
+        "app":
+        {
+          "type": "file",
+          "filename": "logs/app.log",
+          "maxLogSize":  2097152,
+          "numBackups": 20
+        },
+        "error":
+        {
+          "type": "logLevelFilter",
+          "level": "ERROR",
+          "appender": {
+            "type": "file",
+            "filename": "logs/errors.log"
+          }
+        }
+    },
+    "categories": {
+      "default": { "appenders": ["out"], "level": "info" },
+      "access": { "appenders": ["access"], "level": "info"},
+      "app": { "appenders": ["app"], "level": "info" },
+      "error": { "appenders": ["error"],"level": "error" }
+    }
+}

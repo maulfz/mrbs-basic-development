@@ -1,0 +1,259 @@
+body {
+    background-color: #f2f2f2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #565656;
+    line-height: 1.6em;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #444;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+a {
+    /*color: #d6ee18;*/
+    word-wrap: break-word;
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    /*color: #b7cb1b;*/
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+form.signup {
+    margin-top: 30px;
+}
+
+form.signup button.btn {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+form.signup input.form-control:focus {
+    border-color: #fd680e;
+}
+
+/* Nav */
+
+a.navbar-brand {
+    color: #fff !important;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+a.navbar-brand:hover {
+    color: #ddd !important;
+}
+
+/* Header */
+
+#header {
+    /* background-color: #444; */
+    /* background: url(../img/main-bg2.jpg) no-repeat center top; */
+    padding-top: 75px;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 750px;
+    width: 100%;
+
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+    
+    filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header h1 {
+    margin-bottom: 15px;
+    /*color: #fff;*/
+    font-size: 45px;
+    font-weight: 900;
+    letter-spacing: -1px;
+}
+
+h2.subtitle {
+    /*color: #fff;*/
+    font-size: 20px;
+}
+
+
+/* footer */
+#footer {
+    background: #fd680e;
+    padding: 20px 0 5px;
+}
+
+p.copyright {
+    color: #fff;
+    text-align: center;
+}
+
+/****************************/
+.navbar-inverse{
+    background-color: #3162AD
+}
+
+/*=========================================================*/
+#binding-name {
+    width: 300px;
+    height: 3em;
+}
+
+#welcome {
+    /*color: #c6d550;*/
+    margin-top: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+#room-main {
+    margin-top: -15px;
+}
+
+.room-reserv {
+     border-radius: 12px;
+     margin-top: 20px;
+}
+
+.radius {
+     border-radius: 12px;
+}
+
+.room-header > input, select, button {
+    color: #000;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+#txt-date {
+    cursor: default;
+    font-weight: bold;
+}
+
+#room-reservation-list .tooltip-inner{
+    color: #000;
+    max-width:300px;
+    text-align: left;
+    background-color:#8DC0D5;
+}
+
+#room-reservation-list .tooltip-arrow{
+    border-top-color:#8DC0D5;
+    border-bottom-color:#8DC0D5;
+}
+
+.btn-login {
+    font-weight: bold;
+    padding: 6px 25px;
+}
+
+
+.room-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.nav-welecom {
+    color: #eee;
+}
+
+#adminTab li a{
+    color: #eee;
+    padding-left: 30px;
+    padding-right:30px;
+}
+#adminTab li a{
+   color: #333;
+}
+#adminTab li.active a{
+    color: #333;
+}
+
+.xdsoft_disabled{
+    display: none;
+}
+
+/*----------------------------------------------------*/
+
+.opacity-60 {
+    filter: alpha(Opacity=60);
+    -moz-opacity: 0.6;
+    opacity: 0.6;
+}
+
+.opacity-80 {
+    filter: alpha(Opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+}
+
+.opacity-90 {
+    filter: alpha(Opacity=90);
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+}
+
+.bg-color {
+    background-color:#fff;
+}
+
+.bg-color-blue {
+    background-color: rgba(117, 115, 113, 0.1);
+}
+
+.bg-color-eee {
+    background-color: #eee;
+}
+
+.padding-10 {
+    padding: 10px 30px;
+}
+
+.padding-30 {
+    padding: 30px;
+}

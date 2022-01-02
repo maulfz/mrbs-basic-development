@@ -1,0 +1,11 @@
+logs
+app.log
+appp/logs/*
+!.gitkeep
+tmp
+.idea
+.DS_Store
+angular-phonecat-snapshots
+/app/npm-debug.log
+/npm-debug.log
+node_modules

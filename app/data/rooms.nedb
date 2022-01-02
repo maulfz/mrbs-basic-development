@@ -1,0 +1,7 @@
+{"name":"Room1","address":"GSS","description":"there is projector; maximum capacity 40","status":"A","createDate":"2022-01-02 11:47:45","_id":"BkzwFnTOs6fusOtz","updateDate":"2022-01-03 00:50:34"}
+{"name":"Jasmine","address":"3rd Floor","description":"Medium meeting room, which can accommodate 20 people","status":"A","createDate":"2015-08-02 13:51:21","_id":"Mwyx6VyrnTdYfJ2b","updateDate":"2022-01-03 01:17:52"}
+{"name":"Room11","address":"Basement","description":"there is projector2","status":"A","createDate":"2022-01-02 18:10:24","_id":"TYsWGRY7vqsXA3Ud","updateDate":"2022-01-03 01:18:52"}
+{"name":"Dandellion","address":"2nd Floor","description":"Large meeting room, which can accommodate 40 people","status":"A","createDate":"2015-08-02 11:01:09","_id":"UXIQlas8hCFu9uVK","updateDate":"2022-01-03 01:17:24"}
+{"name":"Pavilion","description":"Small meeting room, 10 people","status":"A","createDate":"2015-09-01 10:45:33","_id":"hLtEvNDKO0Qi4tnk","address":"3rd Floor","updateDate":"2022-01-03 01:18:40"}
+{"name":"Bougenville","address":"1st Floor","createDate":"2015-08-02 11:00:49","_id":"lPSe1kdRgnwWW3Gw","updateDate":"2022-01-03 01:17:31","status":"D","description":"-"}
+{"name":"Room2","address":"2th","description":"","status":"A","createDate":"2022-01-03 02:27:01","_id":"uXzoUYzAS5yGBef8"}

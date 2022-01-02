@@ -1,0 +1,132 @@
+   /*============Start Progress Bar============*/
+     .c-split-bar {
+       background-color: #fafafa;
+       height: 25px;
+       padding: 0;
+       -moz-border-radius: 5px;
+       -webkit-border-radius: 5px;
+       border-radius: 5px;
+       -moz-box-shadow: 0 1px 2px #000 inset,0 1px 0 #444;
+       -webkit-box-shadow: 0 1px 2px #000 inset,0 1px 0 #444;
+       box-shadow: 0 1px 2px #000 inset,0 1px 0 #444;
+     }
+
+     .c-split-bar span {
+       display: inline-block;
+       height: 100%;
+       background-color: #fafafa;
+       -moz-box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+       -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+       box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+       -moz-transition: width 0.4s ease-in-out;
+       -webkit-transition: width 0.4s ease-in-out;
+       -ms-transition: width 0.4s ease-in-out;
+       -o-transition: width 0.4s ease-in-out;
+       transition: width 0.4s ease-in-out;
+	     margin-left:-0px;
+     }
+	 .c-split-bar span.first {
+		margin-left:0;
+	 }
+	 
+	 .c-split-bar span.opacity {
+		 filter: alpha(Opacity=0);
+		-moz-opacity: 0;
+		opacity: 0;
+	 }
+   
+   .c-split-bar span.unopacity {
+		 filter: alpha(Opacity=100);
+		-moz-opacity: 1;
+		opacity: 1;
+	 }
+   
+   .c-split-bar span.canRevert{
+     cursor: pointer;
+   }
+
+     /*=======blue bar=======*/
+     .c-split-bar span.blue {
+       background-color: #34c2e3;
+     }
+
+     /*==========orange bar============*/
+     .c-split-bar span.orange  {
+       background-color: #fecf23;
+       background-image: -webkit-gradient(linear, left top, left bottom, from(#fecf23), to(#fd9215));
+       background-image: -webkit-linear-gradient(top, #fecf23, #fd9215);
+       background-image: -moz-linear-gradient(top, #fecf23, #fd9215);
+       background-image: -o-linear-gradient(top, #fecf23, #fd9215);
+       background-image: linear-gradient(top, #fecf23, #fd9215);
+     }
+     
+      .c-split-bar span.orange2  {
+       background-color: #F3C725;
+       background-image: -webkit-gradient(linear, left top, left bottom, from(#F3C725), to(#EC850B));
+       background-image: -webkit-linear-gradient(top, #F3C725, #EC850B);
+       background-image: -moz-linear-gradient(top, #F3C725, #EC850B);
+       background-image: -o-linear-gradient(top, #F3C725, #EC850B);
+       background-image: linear-gradient(top, #F3C725, #EC850B);
+     }
+
+     /*================green bar==============*/
+     .c-split-bar span.green  {
+       background-color: #a5df41;
+       background-image: -webkit-gradient(linear, left top, left bottom, from(#a5df41), to(#4ca916));
+       background-image: -webkit-linear-gradient(top, #a5df41, #4ca916);
+       background-image: -moz-linear-gradient(top, #a5df41, #4ca916);
+       background-image: -o-linear-gradient(top, #a5df41, #4ca916);
+       background-image: linear-gradient(top, #a5df41, #4ca916);
+     }
+     .c-split-bar span.green2{
+       background-color: #AAEA3A;
+       background-image: -webkit-gradient(linear, left top, left bottom, from(#AAEA3A), to(#4CBB0B));
+       background-image: -webkit-linear-gradient(top, #AAEA3A, #4CBB0B);
+       background-image: -moz-linear-gradient(top, #AAEA3A, #4CBB0B);
+       background-image: -o-linear-gradient(top, #AAEA3A, #4CBB0B);
+       background-image: linear-gradient(top, #AAEA3A, #4CBB0B);
+     }
+	 
+	 /*=================== c-split-graduation =====================*/
+	 .c-split-graduation {
+       height: 10px;
+       padding: 0;
+       margin: -3px 0 0 0;
+     }
+
+     .c-split-graduation div {
+       display: inline-block;
+       height: 100%;
+       background-color: #fff;
+       -moz-box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+       -webkit-box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+       box-shadow: 0 1px 0 rgba(255,255,255,.5) inset;
+       -moz-transition: width 0.4s ease-in-out;
+       -webkit-transition: width 0.4s ease-in-out;
+       -ms-transition: width 0.4s ease-in-out;
+       -o-transition: width 0.4s ease-in-out;
+       transition: width 0.4s ease-in-out;
+	   border-left: solid black 1px;
+	   margin-left:-0px;
+	   position: relative;
+     }
+	 .c-split-graduation div.first {
+		margin-left:-1px;
+	 }
+	 .c-split-graduation div.last {
+		  border-right: solid black 1px;
+		  margin-left:-0px;
+	 }
+	 
+	 .c-split-graduation div span{
+	    position:absolute;
+      top: 12px;
+      left: -17px;
+	 }
+	 
+	 .c-split-graduation div label.last{
+	    position: absolute;
+      top:12px;
+      right: -17px;
+      font-weight: normal;
+	 }

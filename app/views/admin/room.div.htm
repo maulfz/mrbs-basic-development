@@ -1,0 +1,57 @@
+<div id="room-manage">
+	<table class="table">
+		<thead>
+			<tr>
+				<th>Room Name</th>
+				<th>Location</th>
+				<th>Description</th>
+				<th>Status</th>
+				<th>Action</th>
+			</tr>
+		</thead>
+		<tbody id="room-table-body">
+		</tbody>
+	</table>
+</div>
+
+<script type="text/html" id="template-room-list">
+	<!-- {{each rooms as room}}
+	<tr class="{{if room.status!=='A'}}inactive{{/if}}">
+		<td>{{room.name}}</td>
+		<td>{{room.address}}</td>
+		<td>{{room.description}}</td>
+		<td>{{room.status}}</td>
+		<td>
+			{{if room.status==='A'}}
+			<a class="btn warn" href="javascript:;" onclick="RoomManager.disable('{{room._id}}')">停用</a> {{else}}
+			<a class="btn primary" href="javascript:;" onclick="RoomManager.enable('{{room._id}}')">启用</a> {{/if}}
+			<a class="btn info" href="javascript:;" onclick="RoomManager.edit('{{room._id}}')">修改</a>
+			<a class="btn danger" href="javascript:;" onclick="RoomManager.delete('{{room._id}}')">删除</a>
+		</td>
+	</tr>
+	{{/each}}
+	<tr>
+		<td colspan="5" class="text-center">
+			<a class="btn success" href="javascript:;" onclick="RoomManager.add()">新增</a>
+		</td>
+	</tr> -->
+</script>
+<script type="text/html" id="template-room-edit">
+	<form id="room-form">
+		<input type="hidden" id="txt-room-id" value="{{_id}}" name="id" />
+		<div class="form-group">
+			<label for="txt-room-name">Name:</label>
+			<input type="text" class="form-control" name="name" id="txt-room-name" placeholder="name" value="{{name}}">
+		</div>
+		<div class="form-group">
+			<label for="txt-room-address">Location:</label>
+			<input type="text" class="form-control" name="address" id="txt-room-address" placeholder="location" value="{{address}}">
+		</div>
+		<div class="form-group">
+			<label for="txt-room-description">Description：</label>
+			<input type="text" class="form-control" name="description" id="txt-room-description" placeholder="Example: There is a projector, suitable for a meeting of 10-30 people" value="{{description}}">
+		</div>
+	</form>
+</script>
+
+{{include './room.edit.htm'}}

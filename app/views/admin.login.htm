@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    {{ include './common/common.head.htm' }}
+        {{include './common/common.css.htm'}}
+</head>
+
+<body>
+    {{include './common/navbar.htm'}}
+        <div id="header">
+            <div class="container">
+                <div class="row bg-color padding-30 radius" style="width:350px; margin:0 auto;">
+                    <div>
+                        <form id="admin-login-form" role="form">
+                            <div class="form-group">
+                                <label for="txt-name">Account:</label>
+                                <input type="text" class="form-control" name="name" id="txt-name" placeholder="username" value="">
+                            </div>
+                            <div class="form-group">
+                                <label for="txt-pwd">Password:</label>
+                                <input type="password" class="form-control" name="pwd" id="txt-pwd" placeholder="password" value="">
+                            </div>
+                            <div class="form-group">
+                                <a href="javascript:;" onclick="login()" class="btn btn-primary btn-login">Sign In</a>
+                            </div>
+                            <div class="form-group">
+                                <div id="login-message" class="text-info text-danger"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{include './common/common.js.htm'}}
+            <script src="/js/admin.js?v=<%version%>"></script>
+</body>
+
+</html>
