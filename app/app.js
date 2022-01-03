@@ -23,7 +23,7 @@ app.engine('htm', template);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'htm');
 
-app.use(express.static('public'));
+app.use(express.static(__dirname + '/../app/public'))
 app.use(logger.connectLogger());
 
 //session 
