@@ -112,8 +112,8 @@ for (var dev in ifaces) {
   });
 }
 
-var port = 5678;
-if (process.argv.length > 2) port = process.argv[2] || port;
+var port = process.env.PORT || 5678;
+//if (process.argv.length > 2) port = process.argv[2] || port;
 app.listen(port, function () {
   logger.info('server started, port = ' + port);
   console.log('server started, port = ' + port);
