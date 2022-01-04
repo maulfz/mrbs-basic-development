@@ -5,18 +5,16 @@
   "description": "Basic MRBS development",
   "repository": "https://github.com/maulfz/mrbs-basic-development.git",
   "license": "MIT",
-  "devDependencies": {
-    "art-template": "latest",
-    "express": "latest",
-    "express-session": "latest",
-    "log4js": "latest",
-    "nedb": "latest"
-  },
   "scripts": {
     "prestart": "npm install",
     "start": "node ./app/app.js 5678"
   },
   "dependencies": {
-    "express-art-template": "^1.0.1"
+    "art-template": "latest",
+    "express": "latest",
+    "express-art-template": "^1.0.1",
+    "express-session": "latest",
+    "log4js": "latest",
+    "nedb": "latest"
   }
 }
